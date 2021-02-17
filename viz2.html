@@ -1,17 +1,14 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Latitude Analysis Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Latitude Web Visualization">
-  <meta name="author" content="Kevin">
+	<meta charset="utf-8" />
+	<title>Visualization 2</title>
+	<meta name="generator" content="BBEdit 13.5" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 </head>
-
 <body>
 <!-- NavBar Stuff -->
 <!-- This is the same on all pages except the visualization pages where the link for the current pages is commented out -->
@@ -31,7 +28,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="viz1.html">Max Temp (&deg;F)</a>
-                        <a class="dropdown-item" href="viz2.html">Humidity (&Phi;)</a>
+<!--                         <a class="dropdown-item" href="viz2.html">Humidit (&Phi;)y</a> -->
                         <a class="dropdown-item" href="viz3.html">Cloudiness (%)</a>
                         <a class="dropdown-item" href="viz4.html">Wind Speed (MPH)</a>
                     </div>
@@ -45,41 +42,31 @@
             </ul>
         </div>
     </nav>
-
- <div class="container">
+<!-- Create the Grid -->
+<!-- There are only 3 vizualizations in the right sidebar because it is redundant to show the same graph 2x     -->
+    <div class="container">
         <div class="row" style="margin-top:30px">
             <div class="col-md-7" style="background-color:white; padding-right: 30px; margin-right: 10px; margin-top:5px">
-                <h1>Summary: Latitude vs &lt;Variable&gt;</h1>
+                <h1>Relative Humidity (&Phi;)</h1>
                 <hr>
-                <img src="resources/images/fig1.png" alt="Latitude vs Temperature" class="img-fluid" width="60%" ALIGN="left">
-                <p class="text-justify"><br>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.*
-                    <br>
-                    <br> After assembling the dataset, we used Matplotlib to plot aspects of the weather vs. latitude. <p>Factors we looked at included:
-                    <ul>
-	<li><strong><a href ="viz1.html">Temperature (&deg;F)</a></strong></li>
-	<li><strong><a href ="viz2.html">Humidity (&phi;)</a></strong></li>
-	<li><strong><a href ="viz3.html">Cloudiness (%)</a></strong></li>
-	<li><strong><a href ="viz4.html">Wind Speed (MPH)</a></strong></li>
-</ul>
-This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-<br>
-<p class = "footnote">*The data set is skewed by the way cities were  chosen.  Many of the random coordinates were in oceans, and as a result coastal cities and towns are heavily overrepresented, especially in the Southern Hemisphere, where there is significantly more water than land-mass.</p>
-
+                <img src="resources/images/fig2.png" alt="Latitude vs Humidity" class="img-fluid"  width=100%>
+                <p class="text-justify">The scatter plot shows that humidity was mostly 60% or above on the date of the data retrieval. The distance from the equator does not appear to be a factor. It is more likely a function of all the coastal cities that were chosen.</p>
             </div>
-            <div class="col-md-4" style="background-color: white; margin-right: 10px; margin-top:5px; padding-bottom:20px">
+            <div class="col-md-4" style="background-color: white; margin-right: 10px; margin-top:5px; margin-bottom:140px">
                 <h2>Visualizations</h2>
                 <hr>
-                <a href="viz1.html"><img src="resources/images/fig1.png" alt="Latitude vs Temperature" style="width:160px;height:160px"></a>
-                <a href="viz2.html"><img src="resources/images/fig2.png" alt="Latitude vs Humidity" style="width:160px;height:160px"></a>
-                <a href="viz3.html"><img src="resources/images/fig3.png" alt="Latitude vs Cloudiness" style="width:160px;height:160px"></a>
-                <a href="viz4.html"><img src="resources/images/fig4.png" alt="Latitude vs Wind Speed" style="width:160px;height:160px"></a>
+                <a href="viz1.html"><img src="resources/images/fig1.png" alt="Latitude versus Temperature" style="width:160px;height:160px"></a>
+<!--                 <a href="viz2.html"><img src="resources/images/fig2.png" alt="Latitude versus Humidity" style="width:160px;height:160px; border:2px solid #000"></a> -->
+                <a href="viz3.html"><img src="resources/images/fig3.png" alt="Latitude verus Cloudiness" style="width:160px;height:160px"></a>
+                <a href="viz4.html"><img src="resources/images/fig4.png" alt="Latitude versus Wind Speed" style="width:160px;height:160px"></a>
             </div>
         </div>
     </div>
+
+</div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <script src="js/scripts.js"></script>
 </body>
 </html>
