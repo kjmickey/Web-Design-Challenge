@@ -11,4 +11,4 @@ Requirements include using bootstrap for the nav-bar and grid layout, a css styl
 https://kjmickey.github.io/webdesignchallenge.github.io/index.html
 
 
-UPDATE:  I used fixed the URL and forgot to change it in the Readme or upload links  The correct URL is  https://kjmickey.github.io/webdesignchallenge/index.html
+UPDATE:  I fixed the URL and forgot to change it in the Readme or upload links  The correct URL is  https://kjmickey.github.io/webdesignchallenge/index.html
